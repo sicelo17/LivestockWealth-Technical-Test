@@ -1,0 +1,28 @@
+.listings {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.listings .listings-titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+    .listings .listings-titles {
+        display: none;
+    }
+}
+
+.listings .listings-titles h3 {
+    color: burlywood;
+}
+
+.listings .listings-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

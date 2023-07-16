@@ -1,0 +1,70 @@
+.carousel {
+    height: 75vh;
+    background-image: url("../../assets/image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .carousel {
+        display: none;
+    }
+}
+
+.carousel-data {
+    position: absolute;
+    bottom: 185px;
+    margin-left: 40px;
+}
+
+.carousel-data .carousel-title {
+    color: white;
+    font-size: 27px;
+    font-weight: 650;
+}
+
+.carousel-data .carousel-price {
+    color: white;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.carousel-data button {
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 11px 22px 11px 22px;
+    background-color: inherit;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.carousel-markers {
+    position: absolute;
+    bottom: 13%;
+    right: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carousel-markers .carousel-marker {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 6px;
+}
+
+.carousel-marker, .active {
+    width: 14px;
+    height: 14px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+
+
