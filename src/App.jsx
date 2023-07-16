@@ -4,6 +4,7 @@ import Listings from "./components/listings/Listings.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import SearchInput from "./components/search/SearchInput.jsx";
 import Categories from "./components/categories/Category.jsx";
+import "./App.css";
 const App = () => {
     return (
         <>
