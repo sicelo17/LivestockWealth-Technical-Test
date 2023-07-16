@@ -1,7 +1,6 @@
 import './footer.css'
 import '../../assets/bootstrap-icons.css'
 import {useState} from "react";
-import subscribe from "../../services.js";
 import axios from "axios"
 
 const Footer = () => {
