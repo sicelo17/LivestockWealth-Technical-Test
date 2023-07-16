@@ -82,6 +82,10 @@ hr {
     display: none;
 }
 
+.bi {
+    color: black;
+}
+
 @media screen and (max-width: 768px){
     .footer-copyright {
         display: flex;

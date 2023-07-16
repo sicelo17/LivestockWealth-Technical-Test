@@ -1,5 +1,5 @@
-import './listings.css'
-import Listing from "../listing/Listing.jsx";
+import './products.css'
+import Listing from "../product-listing/ProductListing.jsx";
 import image7 from '../../assets/img7.png'
 import image5 from '../../assets/img5.png'
 import image4 from '../../assets/img4.png'
