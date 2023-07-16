@@ -2,26 +2,31 @@ import './footer.css'
 import '../../assets/bootstrap-icons.css'
 import {useState} from "react";
 import subscribe from "../../services.js";
+import axios from "axios"
 
 const Footer = () => {
     const [email, setEmail] = useState('')
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        document.querySelector('#spinner').classList.add('spinner')
+        e.preventDefault();
+        document.querySelector('#spinner').classList.add('spinner');
         const data = new URLSearchParams();
         data.append('email', email);
-
-
+      
         try {
-            await subscribe(data)
-            alert("Thank you for subscribing!")
-            document.querySelector('#spinner').classList.remove('spinner')
+          await axios.post('https://subscriber-server-service.onrender.com/', data, {
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
+          });
+          alert('Thank you for subscribing!');
+          setEmail('');
+          document.querySelector('#spinner').classList.remove('spinner');
         } catch (e) {
-            alert("An error occurred. Try again")
-            document.querySelector('#spinner').classList.remove('spinner')
+          alert('An error occurred. Please be patient and try again');
+          document.querySelector('#spinner').classList.remove('spinner');
         }
-
-    }
+      };
+      
     return (
         <>
             <div>

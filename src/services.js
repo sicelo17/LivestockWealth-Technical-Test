@@ -1,16 +1,21 @@
-const subscribe = async (formData) => {
-    const response = await fetch(
-        'https://subscriber-server-service.onrender.com/',
-        {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: formData.toString()
-        }
-    )
-    const data = await response.json()
-    return data
-}
+import axios from "axios";
 
-export default subscribe
+const subscribe = async (formData) => {
+    try {
+      const response = await axios.post(
+        'https://subscriber-server-service.onrender.com/',
+        formData.toString(),
+        {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }
+      );
+      return response.data;
+    } catch (error) {
+      console.error('Error subscribing:', error);
+      throw error;
+    }
+  };
+  
+  export default subscribe; 
