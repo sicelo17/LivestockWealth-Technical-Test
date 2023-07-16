@@ -6,10 +6,11 @@
 
 #listing-value {
     color: burlywood;
+    font-weight: 400;
 }
 
 #listing-name {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .listing .overlay {

@@ -14,25 +14,24 @@
 
 .carousel-data {
     position: absolute;
-    bottom: 185px;
+    bottom: 30%;
     margin-left: 40px;
 }
 
 .carousel-data .carousel-title {
     color: white;
     font-size: 27px;
-    font-weight: 650;
+    font-weight: 500;
 }
 
 .carousel-data .carousel-price {
     color: white;
     font-size: 28px;
-    font-weight: lighter;
 }
 
 .carousel-data button {
     border-radius: 5px;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 11px 22px 11px 22px;
     background-color: inherit;
     color: white;
