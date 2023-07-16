@@ -10,6 +10,14 @@
     justify-content: space-between;
 }
 
+.listings-titles > h3 {
+    font-weight: 400;
+}
+
+.listings-titles > h1 {
+    font-weight: 500;
+}
+
 @media screen and (max-width: 768px){
     .listings .listings-titles {
         display: none;
