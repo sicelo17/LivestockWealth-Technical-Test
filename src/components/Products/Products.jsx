@@ -13,7 +13,7 @@ const Products = () => {
 
                 <div className='listings-products'>
                     {products.map((product) => (
-                        <Listing  name={product.name} imgSrc={product.image} value={product.price} overlay={product.overlay} cartOverlay={product.cartOverLay}/>
+                        <Listing key={product.id}  name={product.name} imgSrc={product.image} value={product.price} overlay={product.overlay} cartOverlay={product.cartOverLay}/>
                     ))}
                 </div>
             </div>
