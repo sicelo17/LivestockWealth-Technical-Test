@@ -1,4 +1,4 @@
-.listing {
+#listing-image {
     height: 350px;
     width: 350px;
     border-radius: 4px;
@@ -13,25 +13,54 @@
     font-weight: 400;
 }
 
-.listing .overlay {
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+.overlay {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     height: inherit;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.48);
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 99;
 }
 
-.listing .overlay .bi {
-    font-size: 20px;
+.overlay:hover{
+    opacity: 1;
 }
 
-.listing .cart-overlay {
-    text-align: center;
+.overlay > .bi {
+    font-size: 22px;
+}
+
+.cart-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-color: rgba(255, 255, 255, 0.48);
-    padding: 6px;
-    position: relative;
-    top: 288px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cart-overlay:hover {
+    opacity: 1;
 }
 
 @media screen and (max-width: 768px){
