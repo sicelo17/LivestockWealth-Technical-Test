@@ -2,7 +2,7 @@ export const products =[
     {
         name : "Lira Earrings",
         price : "20,00",
-        image : 'src/assets/img7.png',
+        image : '/assets/img7.png',
         overlay: true,
         cartOverLay: true,
         id: 1
@@ -10,7 +10,7 @@ export const products =[
     {
         name : "Hal Earrings",
         price : "25,00",
-        image: 'src/assets/img5.png',
+        image: '/assets/img5.png',
         overlay: true,
         cartOverLay: true,
         id: 2
@@ -18,7 +18,7 @@ export const products =[
     {
         name : "Kaede Hair Pin Set of 3",
         price : "30,00",
-        image: 'src/assets/img4.png',
+        image: '/assets/img4.png',
         overlay: true,
         cartOverLay: true,
         id: 3
@@ -26,7 +26,7 @@ export const products =[
     {
         name : "Hair Pin Set of 3",
         price : "30,00",
-        image: 'src/assets/img2.png',
+        image: '/assets/img2.png',
         overlay: true,
         cartOverLay: true,
         id: 4
@@ -34,7 +34,7 @@ export const products =[
     {
         name : "Plaine Necklace",
         price : "19,00",
-        image: 'src/assets/img3.png',
+        image: '/assets/img3.png',
         overlay: true,
         cartOverLay: true,
         id: 5
@@ -42,7 +42,7 @@ export const products =[
     {
         name : "Yuki Hair Pin Set of 3",
         price : "29,00",
-        image: 'src/assets/img6.png',
+        image: '/assets/img6.png',
         overlay: true,
         cartOverLay: true,
         id: 6
